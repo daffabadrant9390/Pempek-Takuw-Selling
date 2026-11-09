@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Pempek Takuw — Open Pre-Order Pempek Khas Palembang",
+    "description": "Pempek khas Palembang homemade, gurih, dan kenyal. Lihat menu, harga, ketentuan pemesanan dan bonus cuko gratis, lalu pesan lewat WhatsApp.",
+    "ogAlt": "Pempek Takuw — aneka pempek khas Palembang dan cuko homemade"
+  },
+  "nav": {
+    "menu": "Menu",
+    "terms": "Ketentuan",
+    "bonus": "Bonus Cuko",
+    "preview": "Preview",
+    "contact": "Kontak",
+    "openMenu": "Buka menu navigasi",
+    "closeMenu": "Tutup menu navigasi",
+    "language": "Pilih bahasa",
+    "home": "Pempek Takuw, ke atas halaman"
+  },
+  "common": {
+    "chatWhatsapp": "Chat di WhatsApp",
+    "orderWhatsapp": "Pesan via WhatsApp",
+    "perPcs": "/pcs"
+  },
+  "hero": {
+    "badge": "Open Pre-Order",
+    "line1": "Pempek Khas Palembang",
+    "line2": "Homemade, Gurih, & Kenyal!",
+    "seeMenu": "Lihat Menu",
+    "platterAlt": "Aneka pempek khas Palembang di atas nampan anyaman bersama cuko",
+    "bottleAlt": "Botol cuko homemade Pempek Takuw",
+    "bowlAlt": "Semangkuk cuko",
+    "bridgeAlt": "Jembatan Ampera, Palembang"
+  },
+  "menu": {
+    "title": "Menu Pempek Kecil",
+    "mascotAlt": "Maskot kucing Pempek Takuw"
+  },
+  "terms": {
+    "title": "Ketentuan Pemesanan",
+    "rules": [
+      "Minimal pembelian **10 pcs** pempek.",
+      "Pempek kecil (telur, keriting, lenjer kecil, adaan, kulit) dipesan minimal **5 pcs per jenis**.",
+      "Ingin mencoba semua 5 jenis pempek kecil? Pesan minimal **25 pcs**.",
+      "Pesanan akan langsung diproses setelah jadwal PO ditutup."
+    ]
+  },
+  "bonus": {
+    "title": "Bonus Cuko Gratis!",
+    "bottleOne": "botol",
+    "bottleMany": "botol",
+    "bottleAlt": "Botol cuko homemade Pempek Takuw",
+    "bottlesAlt": "Dua botol cuko homemade Pempek Takuw"
+  },
+  "largeOrder": {
+    "title": "Pesanan lebih dari 50 pcs?",
+    "note": "Bonus cuko akan dihitung sesuai kelipatan pesanan.",
+    "example": "Contoh: 60 pcs = 2 botol 250 ml + 1 botol 120 ml; 75 pcs = 3 botol 250 ml.",
+    "cta": "Tanya pesanan besar"
+  },
+  "preview": {
+    "title": "Preview Pesanan Kamu",
+    "subtitle": "Lihat pempek dan kemasan aslinya di sini!",
+    "photos": [
+      {
+        "alt": "Pempek homemade segar di keranjang",
+        "caption": "Dibuat homemade"
+      },
+      {
+        "alt": "Pempek kemasan vakum bersama botol cuko",
+        "caption": "Kemasan vakum + cuko"
+      },
+      {
+        "alt": "Aneka pempek dalam kemasan vakum",
+        "caption": "Aneka pilihan pempek"
+      },
+      {
+        "alt": "Pempek dalam kemasan vakum rapi",
+        "caption": "Dikemas rapi, siap kirim"
+      }
+    ],
+    "prev": "Foto sebelumnya",
+    "next": "Foto berikutnya",
+    "goTo": "Lihat foto",
+    "packaging": "Contoh Pengemasan",
+    "boxAlt": "Kardus berisi vakum pempek dan botol cuko, contoh pengemasan pesanan"
+  },
+  "contact": {
+    "title": "Pesan sekarang lewat WhatsApp",
+    "text": "Chat kami untuk pre-order atau tanya-tanya dulu.",
+    "whatsappLabel": "WhatsApp",
+    "websiteLabel": "Website",
+    "rights": "Pempek Takuw. Semua hak dilindungi."
+  },
+  "wa": {
+    "general": "Halo Pempek Takuw, saya ingin pre-order pempek. Boleh minta info lebih lanjut?",
+    "large": "Halo Pempek Takuw, saya ingin pesan lebih dari 50 pcs pempek. Boleh dibantu?"
+  }
+}

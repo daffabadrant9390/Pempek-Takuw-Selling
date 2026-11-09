@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+/* Brand tokens, sampled from the Pempek Takuw brochure. */
+@theme {
+  --color-maroon: #960508;
+  --color-maroon-deep: #740305;
+  --color-sun: #f9cf4d;
+  --color-spark: #fdb814;
+  --color-orange: #f28c28;
+  --color-cream: #fff4e3;
+  --color-paper: #fffbf5;
+  --color-cocoa: #3a1d12;
+  --color-wa: #25d366;
+  --color-wa-deep: #0f7a3d;
+
+  --font-sans: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --shadow-card: 0 8px 24px -10px rgb(116 3 5 / 0.28);
+  --shadow-pill: 0 3px 8px -2px rgb(116 3 5 / 0.4);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+body {
+  background-color: var(--color-cream);
+  background-image:
+    radial-gradient(circle at 12% 8%, rgb(249 207 77 / 0.18), transparent 38%),
+    radial-gradient(circle at 92% 40%, rgb(150 5 8 / 0.06), transparent 40%);
+  background-attachment: fixed;
+  color: var(--color-cocoa);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Anchored sections sit below the sticky header. */
+section[id],
+footer[id] {
+  scroll-margin-top: 5rem;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-spark);
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}
+
+@layer components {
+  /* Brush-stroke banner (hero tagline, section titles). */
+  .brush {
+    position: relative;
+    background: linear-gradient(100deg, var(--color-maroon-deep), var(--color-maroon) 35%, var(--color-maroon) 70%, var(--color-maroon-deep));
+    color: #fff;
+    font-style: italic;
+    font-weight: 600;
+    clip-path: polygon(
+      0.5% 22%, 3% 8%, 9% 14%, 22% 4%, 40% 10%, 58% 2%, 76% 9%, 92% 3%, 98% 12%, 99.5% 34%,
+      97% 52%, 100% 72%, 96% 90%, 84% 96%, 68% 91%, 50% 99%, 32% 93%, 15% 98%, 5% 92%, 1% 76%, 3% 50%
+    );
+  }
+  .brush::after {
+    content: "";
+    position: absolute;
+    left: 9%;
+    right: 9%;
+    bottom: 11%;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--color-spark);
+    opacity: 0.9;
+  }
+
+  /* Hand-drawn yellow blob (section tags). */
+  .blob {
+    background: var(--color-sun);
+    color: var(--color-maroon-deep);
+    font-weight: 700;
+    font-style: italic;
+    border-radius: 58% 42% 55% 45% / 52% 58% 42% 48%;
+    transform: rotate(-3deg);
+    box-shadow: 0 6px 14px -8px rgb(116 3 5 / 0.45);
+  }
+
+  /* Maroon pill label. */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, var(--color-maroon), var(--color-maroon-deep));
+    color: #fff;
+    font-weight: 600;
+    border-radius: 9999px;
+    box-shadow: var(--shadow-pill);
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .card {
+    background: var(--color-paper);
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-card);
+    border: 1px solid rgb(150 5 8 / 0.08);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Motion. Everything below is switched off for prefers-reduced-motion */
+/* by the media query near the top of this file.                        */
+/* ------------------------------------------------------------------ */
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes pop-in {
+  from { opacity: 0; transform: scale(0.82) translateY(18px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes slide-down {
+  from { transform: translateY(-100%); }
+  to   { transform: none; }
+}
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-9px); }
+}
+@keyframes spark-pulse {
+  0%, 100% { opacity: 1; transform: scale(1) rotate(0deg); }
+  50%      { opacity: 0.55; transform: scale(0.88) rotate(-6deg); }
+}
+@keyframes ring {
+  0%   { transform: scale(1); opacity: 0.5; }
+  70%  { transform: scale(1.75); opacity: 0; }
+  100% { transform: scale(1.75); opacity: 0; }
+}
+@keyframes wiggle {
+  0%, 86%, 100% { transform: rotate(0deg); }
+  89% { transform: rotate(-14deg); }
+  92% { transform: rotate(12deg); }
+  95% { transform: rotate(-8deg); }
+}
+
+@layer utilities {
+  .anim-fade-up   { animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: var(--d, 0ms); }
+  .anim-pop       { animation: pop-in 0.9s cubic-bezier(0.34, 1.4, 0.64, 1) both; animation-delay: var(--d, 0ms); }
+  .anim-slide-down{ animation: slide-down 0.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .anim-float     { animation: float-y 5.5s ease-in-out infinite; animation-delay: var(--d, 0ms); }
+  .anim-spark     { animation: spark-pulse 2.8s ease-in-out infinite; animation-delay: var(--d, 0ms); }
+  .anim-ring      { animation: ring 2.6s ease-out infinite; }
+  .anim-wiggle    { animation: wiggle 5s ease-in-out infinite; transform-origin: 60% 60%; }
+}
+
+/* Scroll reveal: starts hidden, <Reveal> adds .is-visible when scrolled into view. */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--d, 0ms);
+  will-change: opacity, transform;
+}
+.reveal[data-variant="pop"]   { transform: scale(0.88) translateY(14px); }
+.reveal[data-variant="left"]  { transform: translateX(-22px); }
+.reveal[data-variant="right"] { transform: translateX(22px); }
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+/* Carousel progress dot: fills over one autoplay interval (matches INTERVAL in PreviewCarousel). */
+@keyframes dot-fill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.anim-dot-fill { transform-origin: left; animation: dot-fill 3800ms linear both; }

@@ -1,0 +1,218 @@
+[
+ {
+  "file": "brand/logo.webp",
+  "w": 355,
+  "h": 178,
+  "source": "sheetC#0"
+ },
+ {
+  "file": "brand/mascot-cat.webp",
+  "w": 168,
+  "h": 136,
+  "source": "sheetB#1"
+ },
+ {
+  "file": "pempek/telur.webp",
+  "w": 165,
+  "h": 132,
+  "source": "sheetA#15"
+ },
+ {
+  "file": "pempek/keriting.webp",
+  "w": 162,
+  "h": 135,
+  "source": "sheetA#16"
+ },
+ {
+  "file": "pempek/lenjer-kecil.webp",
+  "w": 179,
+  "h": 131,
+  "source": "sheetA#17"
+ },
+ {
+  "file": "pempek/adaan.webp",
+  "w": 142,
+  "h": 116,
+  "source": "sheetA#18"
+ },
+ {
+  "file": "pempek/kulit.webp",
+  "w": 190,
+  "h": 131,
+  "source": "sheetA#19"
+ },
+ {
+  "file": "pempek/kapal-selam.webp",
+  "w": 167,
+  "h": 146,
+  "source": "sheetA#20"
+ },
+ {
+  "file": "pempek/lenjer-besar.webp",
+  "w": 218,
+  "h": 146,
+  "source": "sheetA#21"
+ },
+ {
+  "file": "platters/platter-all.webp",
+  "w": 349,
+  "h": 226,
+  "source": "sheetB#29"
+ },
+ {
+  "file": "platters/plate-kapal-selam.webp",
+  "w": 236,
+  "h": 157,
+  "source": "sheetB#31"
+ },
+ {
+  "file": "platters/plate-lenjer-besar.webp",
+  "w": 240,
+  "h": 163,
+  "source": "sheetB#32"
+ },
+ {
+  "file": "cuko/cuko-bottle.webp",
+  "w": 100,
+  "h": 251,
+  "source": "sheetB#30"
+ },
+ {
+  "file": "cuko/cuko-bowl.webp",
+  "w": 177,
+  "h": 129,
+  "source": "sheetB#33"
+ },
+ {
+  "file": "cuko/cuko-bottles-2.webp",
+  "w": 123,
+  "h": 135,
+  "source": "sheetB#16"
+ },
+ {
+  "file": "cuko/cuko-bottles-3.webp",
+  "w": 176,
+  "h": 188,
+  "source": "sheetA#26"
+ },
+ {
+  "file": "packaging/box-filled.webp",
+  "w": 350,
+  "h": 317,
+  "source": "sheetB#28"
+ },
+ {
+  "file": "packaging/box-empty.webp",
+  "w": 334,
+  "h": 260,
+  "source": "sheetC#25"
+ },
+ {
+  "file": "packaging/pack-telur.webp",
+  "w": 186,
+  "h": 119,
+  "source": "sheetC#7"
+ },
+ {
+  "file": "packaging/pack-lenjer-kecil.webp",
+  "w": 180,
+  "h": 125,
+  "source": "sheetC#8"
+ },
+ {
+  "file": "packaging/pack-keriting.webp",
+  "w": 186,
+  "h": 124,
+  "source": "sheetC#9"
+ },
+ {
+  "file": "packaging/pack-adaan.webp",
+  "w": 187,
+  "h": 126,
+  "source": "sheetC#14"
+ },
+ {
+  "file": "packaging/pack-kulit.webp",
+  "w": 185,
+  "h": 127,
+  "source": "sheetC#15"
+ },
+ {
+  "file": "packaging/pack-lenjer-besar.webp",
+  "w": 191,
+  "h": 125,
+  "source": "sheetC#16"
+ },
+ {
+  "file": "decor/brush-banner.webp",
+  "w": 350,
+  "h": 90,
+  "source": "sheetA#2"
+ },
+ {
+  "file": "decor/brush-underline.webp",
+  "w": 195,
+  "h": 34,
+  "source": "sheetA#3"
+ },
+ {
+  "file": "decor/wave-pattern.webp",
+  "w": 184,
+  "h": 94,
+  "source": "sheetA#4"
+ },
+ {
+  "file": "decor/ampera-bridge.webp",
+  "w": 274,
+  "h": 142,
+  "source": "sheetC#33"
+ },
+ {
+  "file": "decor/banana-leaf.webp",
+  "w": 228,
+  "h": 116,
+  "source": "sheetA#29"
+ },
+ {
+  "file": "decor/cucumber-slices.webp",
+  "w": 220,
+  "h": 98,
+  "source": "sheetA#30"
+ },
+ {
+  "file": "photos/plate-keriting-a.webp",
+  "w": 1536,
+  "h": 1024,
+  "source": "a_clean_food_photography_still_life_of_a_plate_of.png"
+ },
+ {
+  "file": "photos/plate-keriting-b.webp",
+  "w": 1536,
+  "h": 1024,
+  "source": "a_clean_well_lit_food_still_life_scene_on_a_light.png"
+ },
+ {
+  "file": "photos/plate-keriting-c.webp",
+  "w": 1536,
+  "h": 1024,
+  "source": "a_close_up_food_still_life_on_a_neutral_beige_tabl.png"
+ },
+ {
+  "file": "photos/plate-lenjer-besar-a.webp",
+  "w": 1536,
+  "h": 1024,
+  "source": "a_close_up_food_still_life_on_a_warm_neutral_beig.png"
+ },
+ {
+  "file": "photos/plate-lenjer-besar-b.webp",
+  "w": 1536,
+  "h": 1024,
+  "source": "a_high_resolution_food_photography_scene_of_a_plat.png"
+ },
+ {
+  "file": "photos/plate-adaan-a.webp",
+  "w": 1536,
+  "h": 1024,
+  "source": "a_warm_softly_lit_food_photography_scene_in_a_clo.png"
+ }
+]

@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Pempek Takuw — Open Pre-Order Palembang Pempek",
+    "description": "Homemade, savory and chewy Palembang pempek. See the menu, prices, ordering terms and free cuko bonus, then order on WhatsApp.",
+    "ogAlt": "Pempek Takuw — assorted Palembang pempek with homemade cuko"
+  },
+  "nav": {
+    "menu": "Menu",
+    "terms": "Terms",
+    "bonus": "Cuko Bonus",
+    "preview": "Preview",
+    "contact": "Contact",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "language": "Choose language",
+    "home": "Pempek Takuw, back to top"
+  },
+  "common": {
+    "chatWhatsapp": "Chat on WhatsApp",
+    "orderWhatsapp": "Order on WhatsApp",
+    "perPcs": "/pcs"
+  },
+  "hero": {
+    "badge": "Open Pre-Order",
+    "line1": "Authentic Palembang Pempek",
+    "line2": "Homemade, Savory & Chewy!",
+    "seeMenu": "See Menu",
+    "platterAlt": "Assorted Palembang pempek on a woven tray with cuko dipping sauce",
+    "bottleAlt": "Pempek Takuw homemade cuko bottle",
+    "bowlAlt": "A bowl of cuko dipping sauce",
+    "bridgeAlt": "Ampera Bridge, Palembang"
+  },
+  "menu": {
+    "title": "Small Pempek Menu",
+    "mascotAlt": "Pempek Takuw cat mascot"
+  },
+  "terms": {
+    "title": "Ordering Terms",
+    "rules": [
+      "Minimum purchase is **10 pcs** of pempek.",
+      "Small pempek (telur, keriting, lenjer kecil, adaan, kulit) must be ordered at least **5 pcs per type**.",
+      "Want to try all 5 small types? Order at least **25 pcs**.",
+      "Orders are processed right after the PO schedule closes."
+    ]
+  },
+  "bonus": {
+    "title": "Free Cuko Bonus!",
+    "bottleOne": "bottle",
+    "bottleMany": "bottles",
+    "bottleAlt": "Pempek Takuw homemade cuko bottle",
+    "bottlesAlt": "Two Pempek Takuw homemade cuko bottles"
+  },
+  "largeOrder": {
+    "title": "Ordering more than 50 pcs?",
+    "note": "Cuko bonus is calculated by order multiples.",
+    "example": "Example: 60 pcs = 2 × 250 ml + 1 × 120 ml bottles; 75 pcs = 3 × 250 ml bottles.",
+    "cta": "Ask about large orders"
+  },
+  "preview": {
+    "title": "Preview Your Order",
+    "subtitle": "See our real pempek and packaging here!",
+    "photos": [
+      {
+        "alt": "Fresh homemade pempek in baskets",
+        "caption": "Homemade"
+      },
+      {
+        "alt": "Vacuum-packed pempek with bottles of cuko",
+        "caption": "Vacuum pack + cuko"
+      },
+      {
+        "alt": "Assorted pempek in vacuum packs",
+        "caption": "Assorted choices"
+      },
+      {
+        "alt": "Neatly vacuum-packed pempek",
+        "caption": "Packed neatly, ready to ship"
+      }
+    ],
+    "prev": "Previous photo",
+    "next": "Next photo",
+    "goTo": "Go to photo",
+    "packaging": "Packaging Example",
+    "boxAlt": "Box filled with vacuum-packed pempek and a bottle of cuko, an example of how orders are packed"
+  },
+  "contact": {
+    "title": "Order now on WhatsApp",
+    "text": "Message us to pre-order or ask anything first.",
+    "whatsappLabel": "WhatsApp",
+    "websiteLabel": "Website",
+    "rights": "Pempek Takuw. All rights reserved."
+  },
+  "wa": {
+    "general": "Hello Pempek Takuw, I'd like to pre-order pempek. Could you share more details?",
+    "large": "Hello Pempek Takuw, I'd like to order more than 50 pcs of pempek. Could you help?"
+  }
+}
