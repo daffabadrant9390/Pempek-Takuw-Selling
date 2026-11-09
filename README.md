@@ -29,8 +29,8 @@ Colours: maroon `#960508`, deep maroon `#740305`, yellow `#F9CF4D`, cream `#FFF4
 
 ## Changing the domain
 
-Set `NEXT_PUBLIC_SITE_URL` (for example `https://www.pempektakuw.com`) when building. It is used for
-canonical links, the sitemap and the social-share image. The default is `https://www.pempektakuw.com`.
+Set `NEXT_PUBLIC_SITE_URL` (for example `https://pempek-takuw-selling.vercel.app`) when building. It is used for
+canonical links, the sitemap and the social-share image. The default is `https://pempek-takuw-selling.vercel.app`.
 
 ## Deploying
 

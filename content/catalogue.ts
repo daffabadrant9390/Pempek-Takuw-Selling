@@ -5,8 +5,8 @@
 
 export const SITE = {
   name: "Pempek Takuw",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.pempektakuw.com",
-  website: "www.pempektakuw.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://pempek-takuw-selling.vercel.app",
+  website: "https://pempek-takuw-selling.vercel.app",
   /** Digits only, with country code (no +, no spaces). Used for wa.me links. */
   whatsappNumber: "6281271363702",
   whatsappDisplay: "+62 812-7136-3702",
