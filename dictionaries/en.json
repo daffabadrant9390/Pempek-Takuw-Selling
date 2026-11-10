@@ -40,13 +40,16 @@
       "Minimum purchase is **10 pcs** of pempek.",
       "Small pempek (telur, keriting, lenjer kecil, adaan, kulit) must be ordered at least **5 pcs per type**.",
       "Want to try all 5 small types? Order at least **25 pcs**.",
-      "Orders are processed right after the PO schedule closes."
+      "For lenjer besar and kapal selam, minimum purchase is **2 pcs**."
     ]
   },
   "bonus": {
     "title": "Free Cuko Bonus!",
     "bottleOne": "bottle",
     "bottleMany": "bottles",
+    "smallLabel": "small pempek",
+    "orLabel": "OR",
+    "largeLabel": "lenjer / kapal selam",
     "bottleAlt": "Pempek Takuw homemade cuko bottle",
     "bottlesAlt": "Two Pempek Takuw homemade cuko bottles"
   },

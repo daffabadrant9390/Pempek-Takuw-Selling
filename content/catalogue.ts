@@ -41,19 +41,22 @@ export const smallPempek: Product[] = [
 ];
 
 export const largePempek: Product[] = [
-  { id: "kapal-selam", name: "Kapal Selam", price: 30000, image: img("platters/plate-kapal-selam", 236, 157) },
-  { id: "lenjer-besar", name: "Lenjer Besar", price: 35000, image: img("platters/plate-lenjer-besar", 240, 163) },
+  { id: "kapal-selam", name: "Kapal Selam", price: 26000, image: img("platters/plate-kapal-selam", 236, 157) },
+  { id: "lenjer-besar", name: "Lenjer Besar", price: 30000, image: img("platters/plate-lenjer-besar", 240, 163) },
 ];
 
 /** Free cuko tiers. Above 50 pcs the 50-pcs tier repeats (see dictionaries). */
 export type BonusTier = {
+  /** Minimum pcs of small pempek (or of all pempek for the bigger tiers). */
   minPcs: number;
   bottles: number;
   ml: 120 | 250;
+  /** Alternative way to earn this tier: min. pcs of lenjer besar / kapal selam. */
+  altLargePcs?: number;
 };
 
 export const bonusTiers: BonusTier[] = [
-  { minPcs: 10, bottles: 1, ml: 120 },
+  { minPcs: 10, bottles: 1, ml: 120, altLargePcs: 2 },
   { minPcs: 25, bottles: 1, ml: 250 },
   { minPcs: 50, bottles: 2, ml: 250 },
 ];

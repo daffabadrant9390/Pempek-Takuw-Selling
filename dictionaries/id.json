@@ -40,13 +40,16 @@
       "Minimal pembelian **10 pcs** pempek.",
       "Pempek kecil (telur, keriting, lenjer kecil, adaan, kulit) dipesan minimal **5 pcs per jenis**.",
       "Ingin mencoba semua 5 jenis pempek kecil? Pesan minimal **25 pcs**.",
-      "Pesanan akan langsung diproses setelah jadwal PO ditutup."
+      "Untuk pempek lenjer besar dan kapal selam minimal pembelian **2 pcs**."
     ]
   },
   "bonus": {
     "title": "Bonus Cuko Gratis!",
     "bottleOne": "botol",
     "bottleMany": "botol",
+    "smallLabel": "pempek kecil",
+    "orLabel": "ATAU",
+    "largeLabel": "lenjer / kapal selam",
     "bottleAlt": "Botol cuko homemade Pempek Takuw",
     "bottlesAlt": "Dua botol cuko homemade Pempek Takuw"
   },

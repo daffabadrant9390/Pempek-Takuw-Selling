@@ -1,0 +1,111 @@
+diff --git a/components/Bonus.tsx b/components/Bonus.tsx
+index 103caef..ecc31ec 100644
+--- a/components/Bonus.tsx
++++ b/components/Bonus.tsx
+@@ -19,16 +19,27 @@ export function Bonus({ dict }: { dict: Dictionary }) {
+             </div>
+           </Reveal>
+ 
+-          <ul className="grid gap-8 sm:grid-cols-3 sm:gap-0 sm:divide-x sm:divide-maroon/15">
++          <ul className="grid gap-8 lg:grid-cols-3 lg:gap-0 lg:divide-x lg:divide-maroon/15">
+             {bonusTiers.map((tier, i) => {
+               const two = tier.bottles === 2;
+               const word = tier.bottles === 1 ? bonus.bottleOne : bonus.bottleMany;
+               return (
+-                <Reveal as="li" key={tier.minPcs} delay={150 + i * 140} className="sm:px-4">
++                <Reveal as="li" key={tier.minPcs} delay={150 + i * 140} className="lg:px-4">
+                   <div className="group flex flex-col items-center gap-4">
+-                    <span className="pill px-6 py-2.5 text-base italic transition duration-300 group-hover:-translate-y-0.5 group-hover:scale-105">
+-                      Min. {tier.minPcs} pcs
+-                    </span>
++                    {tier.altLargePcs ? (
++                      <span className="pill flex-col gap-0.5 whitespace-nowrap px-4 py-2 text-center italic leading-tight transition duration-300 group-hover:-translate-y-0.5 group-hover:scale-105">
++                        <span className="text-sm min-[400px]:text-base lg:text-sm">
++                          Min. {tier.minPcs} pcs {bonus.smallLabel}
++                        </span>
++                        <span className="text-[0.7rem] font-medium text-white/90 min-[400px]:text-xs lg:text-[0.7rem]">
++                          {bonus.orLabel} {tier.altLargePcs} pcs {bonus.largeLabel}
++                        </span>
++                      </span>
++                    ) : (
++                      <span className="pill px-6 py-2.5 text-base italic transition duration-300 group-hover:-translate-y-0.5 group-hover:scale-105">
++                        Min. {tier.minPcs} pcs
++                      </span>
++                    )}
+                     <div className="flex items-center gap-3">
+                       <p className="text-center text-lg font-semibold leading-snug">
+                         {tier.bottles} {word}
+diff --git a/content/catalogue.ts b/content/catalogue.ts
+index 1d5f40f..8b2399c 100644
+--- a/content/catalogue.ts
++++ b/content/catalogue.ts
+@@ -41,19 +41,22 @@ export const smallPempek: Product[] = [
+ ];
+ 
+ export const largePempek: Product[] = [
+-  { id: "kapal-selam", name: "Kapal Selam", price: 30000, image: img("platters/plate-kapal-selam", 236, 157) },
+-  { id: "lenjer-besar", name: "Lenjer Besar", price: 35000, image: img("platters/plate-lenjer-besar", 240, 163) },
++  { id: "kapal-selam", name: "Kapal Selam", price: 26000, image: img("platters/plate-kapal-selam", 236, 157) },
++  { id: "lenjer-besar", name: "Lenjer Besar", price: 30000, image: img("platters/plate-lenjer-besar", 240, 163) },
+ ];
+ 
+ /** Free cuko tiers. Above 50 pcs the 50-pcs tier repeats (see dictionaries). */
+ export type BonusTier = {
++  /** Minimum pcs of small pempek (or of all pempek for the bigger tiers). */
+   minPcs: number;
+   bottles: number;
+   ml: 120 | 250;
++  /** Alternative way to earn this tier: min. pcs of lenjer besar / kapal selam. */
++  altLargePcs?: number;
+ };
+ 
+ export const bonusTiers: BonusTier[] = [
+-  { minPcs: 10, bottles: 1, ml: 120 },
++  { minPcs: 10, bottles: 1, ml: 120, altLargePcs: 2 },
+   { minPcs: 25, bottles: 1, ml: 250 },
+   { minPcs: 50, bottles: 2, ml: 250 },
+ ];
+diff --git a/dictionaries/en.json b/dictionaries/en.json
+index 3221ecd..cc75a57 100644
+--- a/dictionaries/en.json
++++ b/dictionaries/en.json
+@@ -40,13 +40,16 @@
+       "Minimum purchase is **10 pcs** of pempek.",
+       "Small pempek (telur, keriting, lenjer kecil, adaan, kulit) must be ordered at least **5 pcs per type**.",
+       "Want to try all 5 small types? Order at least **25 pcs**.",
+-      "Orders are processed right after the PO schedule closes."
++      "For lenjer besar and kapal selam, minimum purchase is **2 pcs**."
+     ]
+   },
+   "bonus": {
+     "title": "Free Cuko Bonus!",
+     "bottleOne": "bottle",
+     "bottleMany": "bottles",
++    "smallLabel": "small pempek",
++    "orLabel": "OR",
++    "largeLabel": "lenjer / kapal selam",
+     "bottleAlt": "Pempek Takuw homemade cuko bottle",
+     "bottlesAlt": "Two Pempek Takuw homemade cuko bottles"
+   },
+diff --git a/dictionaries/id.json b/dictionaries/id.json
+index f0a72d1..07bd92b 100644
+--- a/dictionaries/id.json
++++ b/dictionaries/id.json
+@@ -40,13 +40,16 @@
+       "Minimal pembelian **10 pcs** pempek.",
+       "Pempek kecil (telur, keriting, lenjer kecil, adaan, kulit) dipesan minimal **5 pcs per jenis**.",
+       "Ingin mencoba semua 5 jenis pempek kecil? Pesan minimal **25 pcs**.",
+-      "Pesanan akan langsung diproses setelah jadwal PO ditutup."
++      "Untuk pempek lenjer besar dan kapal selam minimal pembelian **2 pcs**."
+     ]
+   },
+   "bonus": {
+     "title": "Bonus Cuko Gratis!",
+     "bottleOne": "botol",
+     "bottleMany": "botol",
++    "smallLabel": "pempek kecil",
++    "orLabel": "ATAU",
++    "largeLabel": "lenjer / kapal selam",
+     "bottleAlt": "Botol cuko homemade Pempek Takuw",
+     "bottlesAlt": "Dua botol cuko homemade Pempek Takuw"
+   },
