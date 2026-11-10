@@ -9,14 +9,17 @@ export function Menu({ dict }: { dict: Dictionary }) {
   const perPcs = dict.common.perPcs;
 
   return (
-    <section id="menu" aria-labelledby="menu-title" className="mx-auto max-w-6xl px-4 py-8 sm:py-12">
+    <section id="menu" aria-labelledby="menu-heading" className="mx-auto max-w-6xl px-4 py-8 sm:py-12">
       <div className="card p-5 sm:p-8">
+        <Reveal variant="pop" className="mb-6 flex justify-center">
+          <h2 id="menu-heading" className="pill px-8 py-2.5 text-2xl italic sm:text-3xl">{dict.menu.singles}</h2>
+        </Reveal>
         <div className="grid items-center gap-8 lg:grid-cols-[240px_1fr]">
           <Reveal variant="pop" className="flex justify-center">
             <div className="blob flex w-60 flex-col items-center justify-center px-8 py-7 text-center">
-              <h2 id="menu-title" className="text-3xl leading-tight">
+              <h3 id="menu-title" className="text-3xl leading-tight">
                 {dict.menu.title}
-              </h2>
+              </h3>
               <span className="pill mt-3 -rotate-3 px-4 py-1.5 text-sm not-italic">
                 {formatRupiah(SMALL_PRICE)}
                 {perPcs}
@@ -34,7 +37,6 @@ export function Menu({ dict }: { dict: Dictionary }) {
                       width={p.image.w}
                       height={p.image.h}
                       alt={p.name}
-                      loading={i === 0 ? "eager" : "lazy"}
                       className="size-full object-cover transition duration-500 ease-out group-hover:scale-110"
                     />
                   </div>
@@ -61,7 +63,6 @@ export function Menu({ dict }: { dict: Dictionary }) {
                   width={p.image.w}
                   height={p.image.h}
                   alt={p.name}
-                  loading={i === 0 ? "eager" : "lazy"}
                   className="h-auto w-24 max-[359px]:w-16 shrink-0 drop-shadow-md transition duration-300 ease-out group-hover:scale-110 group-hover:-rotate-3 min-[420px]:w-36 sm:w-44"
                 />
               </div>

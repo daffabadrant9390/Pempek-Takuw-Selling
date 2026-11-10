@@ -7,6 +7,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { LargeOrder } from "@/components/LargeOrder";
 import { Menu } from "@/components/Menu";
+import { Package } from "@/components/Package";
 import { Preview } from "@/components/Preview";
 import { Terms } from "@/components/Terms";
 import { getDictionary, isLang } from "@/lib/i18n";
@@ -30,6 +31,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <main id="top">
         <Hero dict={dict} waHref={waGeneral} />
         <Menu dict={dict} />
+        <Package dict={dict} waHref={waLink(dict.wa.package)} />
         <Terms dict={dict} />
         <Bonus dict={dict} />
         <LargeOrder dict={dict} waHref={waLarge} />

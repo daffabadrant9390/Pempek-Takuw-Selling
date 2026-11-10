@@ -19,27 +19,17 @@ export function Bonus({ dict }: { dict: Dictionary }) {
             </div>
           </Reveal>
 
-          <ul className="grid gap-8 lg:grid-cols-3 lg:gap-0 lg:divide-x lg:divide-maroon/15">
+          <ul className="grid gap-8 sm:grid-cols-3 sm:gap-0 sm:divide-x sm:divide-maroon/15">
             {bonusTiers.map((tier, i) => {
               const two = tier.bottles === 2;
               const word = tier.bottles === 1 ? bonus.bottleOne : bonus.bottleMany;
               return (
-                <Reveal as="li" key={tier.minPcs} delay={150 + i * 140} className="lg:px-4">
+                <Reveal as="li" key={tier.minPcs} delay={150 + i * 140} className="sm:px-4">
                   <div className="group flex flex-col items-center gap-4">
-                    {tier.altLargePcs ? (
-                      <span className="pill flex-col gap-0.5 whitespace-nowrap px-4 py-2 text-center italic leading-tight transition duration-300 group-hover:-translate-y-0.5 group-hover:scale-105">
-                        <span className="text-sm min-[400px]:text-base lg:text-sm">
-                          Min. {tier.minPcs} pcs {bonus.smallLabel}
-                        </span>
-                        <span className="text-[0.7rem] font-medium text-white/90 min-[400px]:text-xs lg:text-[0.7rem]">
-                          {bonus.orLabel} {tier.altLargePcs} pcs {bonus.largeLabel}
-                        </span>
-                      </span>
-                    ) : (
-                      <span className="pill px-6 py-2.5 text-base italic transition duration-300 group-hover:-translate-y-0.5 group-hover:scale-105">
-                        Min. {tier.minPcs} pcs
-                      </span>
-                    )}
+                    <span className="pill px-6 py-2.5 text-base italic transition duration-300 group-hover:-translate-y-0.5 group-hover:scale-105">
+                      Min. {tier.minPcs} pcs
+                    </span>
+                    {i === 0 && <p className="max-w-[13rem] text-center text-xs font-medium leading-snug text-maroon/80">{bonus.firstTierNote}</p>}
                     <div className="flex items-center gap-3">
                       <p className="text-center text-lg font-semibold leading-snug">
                         {tier.bottles} {word}

@@ -6,6 +6,7 @@
   },
   "nav": {
     "menu": "Menu",
+    "package": "Paket",
     "terms": "Ketentuan",
     "bonus": "Bonus Cuko",
     "preview": "Preview",
@@ -32,26 +33,34 @@
   },
   "menu": {
     "title": "Menu Pempek Kecil",
-    "mascotAlt": "Maskot kucing Pempek Takuw"
+    "mascotAlt": "Maskot kucing Pempek Takuw",
+    "singles": "Pempek Satuan"
+  },
+  "paket": {
+    "label": "Paket Pempek",
+    "title": "Paket 10 Pempek",
+    "subtitle": "Mau coba 5 jenis sekaligus? Isi 1 paket: masing-masing jenis 2 pcs.",
+    "perPaket": "/paket",
+    "qty": "2×",
+    "itemAlt": "2 pcs pempek {name} dalam kemasan",
+    "cta": "Pesan Paket via WhatsApp"
   },
   "terms": {
     "title": "Ketentuan Pemesanan",
     "rules": [
-      "Minimal pembelian **10 pcs** pempek.",
-      "Pempek kecil (telur, keriting, lenjer kecil, adaan, kulit) dipesan minimal **5 pcs per jenis**.",
-      "Ingin mencoba semua 5 jenis pempek kecil? Pesan minimal **25 pcs**.",
-      "Untuk pempek lenjer besar dan kapal selam minimal pembelian **2 pcs**."
+      "Ingin merasakan **5 jenis pempek sekaligus**? Beli **Paket 10 Pempek**.",
+      "Pempek kecil minimal pemesanan **10 pcs**, baik satuan maupun paket.",
+      "Untuk non-paket (satuan), pempek kecil minimal **5 pcs per jenis**.",
+      "Khusus **Lenjer Besar & Kapal Selam** saja, minimal **2 pcs**. Boleh **1 pcs** jika digabung dengan **10 pcs pempek kecil**."
     ]
   },
   "bonus": {
     "title": "Bonus Cuko Gratis!",
     "bottleOne": "botol",
     "bottleMany": "botol",
-    "smallLabel": "pempek kecil",
-    "orLabel": "ATAU",
-    "largeLabel": "lenjer / kapal selam",
     "bottleAlt": "Botol cuko homemade Pempek Takuw",
-    "bottlesAlt": "Dua botol cuko homemade Pempek Takuw"
+    "bottlesAlt": "Dua botol cuko homemade Pempek Takuw",
+    "firstTierNote": "Min. 10 pcs pempek kecil ATAU 2 pcs Lenjer Besar / Kapal Selam"
   },
   "largeOrder": {
     "title": "Pesanan lebih dari 50 pcs?",
@@ -95,6 +104,7 @@
   },
   "wa": {
     "general": "Halo Pempek Takuw, saya ingin pre-order pempek. Boleh minta info lebih lanjut?",
-    "large": "Halo Pempek Takuw, saya ingin pesan lebih dari 50 pcs pempek. Boleh dibantu?"
+    "large": "Halo Pempek Takuw, saya ingin pesan lebih dari 50 pcs pempek. Boleh dibantu?",
+    "package": "Halo Pempek Takuw, saya ingin pesan Paket 10 Pempek. Boleh minta info lebih lanjut?"
   }
 }

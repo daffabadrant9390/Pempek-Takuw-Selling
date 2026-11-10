@@ -6,6 +6,7 @@
   },
   "nav": {
     "menu": "Menu",
+    "package": "Package",
     "terms": "Terms",
     "bonus": "Cuko Bonus",
     "preview": "Preview",
@@ -32,26 +33,34 @@
   },
   "menu": {
     "title": "Small Pempek Menu",
-    "mascotAlt": "Pempek Takuw cat mascot"
+    "mascotAlt": "Pempek Takuw cat mascot",
+    "singles": "Single Pempek"
+  },
+  "paket": {
+    "label": "Pempek Package",
+    "title": "10-Pempek Package",
+    "subtitle": "Want to try all 5 types at once? One package has 2 pcs of each type.",
+    "perPaket": "/package",
+    "qty": "2×",
+    "itemAlt": "2 pcs of {name} pempek, packed",
+    "cta": "Order Package on WhatsApp"
   },
   "terms": {
     "title": "Ordering Terms",
     "rules": [
-      "Minimum purchase is **10 pcs** of pempek.",
-      "Small pempek (telur, keriting, lenjer kecil, adaan, kulit) must be ordered at least **5 pcs per type**.",
-      "Want to try all 5 small types? Order at least **25 pcs**.",
-      "For lenjer besar and kapal selam, minimum purchase is **2 pcs**."
+      "Want to taste **all 5 types at once**? Get the **10-Pempek Package**.",
+      "Small pempek minimum order is **10 pcs**, either single or package.",
+      "For non-package (single) orders, small pempek must be ordered at least **5 pcs per type**.",
+      "**Lenjer Besar & Kapal Selam** only: minimum **2 pcs**. **1 pc** is okay if combined with **10 pcs of small pempek**."
     ]
   },
   "bonus": {
     "title": "Free Cuko Bonus!",
     "bottleOne": "bottle",
     "bottleMany": "bottles",
-    "smallLabel": "small pempek",
-    "orLabel": "OR",
-    "largeLabel": "lenjer / kapal selam",
     "bottleAlt": "Pempek Takuw homemade cuko bottle",
-    "bottlesAlt": "Two Pempek Takuw homemade cuko bottles"
+    "bottlesAlt": "Two Pempek Takuw homemade cuko bottles",
+    "firstTierNote": "Min. 10 pcs of small pempek OR 2 pcs of Lenjer Besar / Kapal Selam"
   },
   "largeOrder": {
     "title": "Ordering more than 50 pcs?",
@@ -95,6 +104,7 @@
   },
   "wa": {
     "general": "Hello Pempek Takuw, I'd like to pre-order pempek. Could you share more details?",
-    "large": "Hello Pempek Takuw, I'd like to order more than 50 pcs of pempek. Could you help?"
+    "large": "Hello Pempek Takuw, I'd like to order more than 50 pcs of pempek. Could you help?",
+    "package": "Hello Pempek Takuw, I'd like to order the 10-Pempek Package. Could you share more details?"
   }
 }

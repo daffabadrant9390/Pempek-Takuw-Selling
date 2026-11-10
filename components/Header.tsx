@@ -13,6 +13,7 @@ type Props = {
   waHref: string;
   labels: {
     menu: string;
+    package: string;
     terms: string;
     bonus: string;
     preview: string;
@@ -25,7 +26,7 @@ type Props = {
   };
 };
 
-const SECTION_IDS = ["menu", "terms", "bonus", "preview", "contact"] as const;
+const SECTION_IDS = ["menu", "paket", "terms", "bonus", "preview", "contact"] as const;
 
 export function Header({ lang, waHref, labels }: Props) {
   const [open, setOpen] = useState(false);
@@ -128,6 +129,7 @@ export function Header({ lang, waHref, labels }: Props) {
 
   const links = [
     { id: "menu", label: labels.menu },
+    { id: "paket", label: labels.package },
     { id: "terms", label: labels.terms },
     { id: "bonus", label: labels.bonus },
     { id: "preview", label: labels.preview },
@@ -150,7 +152,7 @@ export function Header({ lang, waHref, labels }: Props) {
               width={images.logo.w}
               height={images.logo.h}
               alt="Pempek Takuw"
-              loading="eager"
+              priority
               className={`w-auto transition-[height] duration-300 ${scrolled ? "h-9" : "h-11"}`}
             />
           </a>
@@ -237,7 +239,7 @@ export function Header({ lang, waHref, labels }: Props) {
           style={{ paddingBottom: "max(1.25rem, env(safe-area-inset-bottom))" }}
         >
           <div className="flex items-center justify-between px-5 pb-2 pt-4">
-            <Image src={images.logo.src} width={images.logo.w} height={images.logo.h} alt="Pempek Takuw" loading="eager" className="h-10 w-auto" />
+            <Image src={images.logo.src} width={images.logo.w} height={images.logo.h} alt="Pempek Takuw" className="h-10 w-auto" />
             <button
               ref={closeRef}
               type="button"

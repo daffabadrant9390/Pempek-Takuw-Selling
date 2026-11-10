@@ -6,7 +6,7 @@
 export const SITE = {
   name: "Pempek Takuw",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://pempek-takuw-selling.vercel.app",
-  website: "https://pempek-takuw-selling.vercel.app",
+  website: "pempek-takuw-selling.vercel.app",
   /** Digits only, with country code (no +, no spaces). Used for wa.me links. */
   whatsappNumber: "6281271363702",
   whatsappDisplay: "+62 812-7136-3702",
@@ -40,6 +40,10 @@ export const smallPempek: Product[] = [
   { id: "kulit", name: "Kulit", price: SMALL_PRICE, image: img("pempek-photo/kulit", 360, 360) },
 ];
 
+/** 10-pempek package: 2 pcs of each small type. Price = 10 × SMALL_PRICE. */
+export const PACKAGE_PRICE = 75000;
+export const PACKAGE_QTY_PER_TYPE = 2;
+
 export const largePempek: Product[] = [
   { id: "kapal-selam", name: "Kapal Selam", price: 26000, image: img("platters/plate-kapal-selam", 236, 157) },
   { id: "lenjer-besar", name: "Lenjer Besar", price: 30000, image: img("platters/plate-lenjer-besar", 240, 163) },
@@ -47,16 +51,13 @@ export const largePempek: Product[] = [
 
 /** Free cuko tiers. Above 50 pcs the 50-pcs tier repeats (see dictionaries). */
 export type BonusTier = {
-  /** Minimum pcs of small pempek (or of all pempek for the bigger tiers). */
   minPcs: number;
   bottles: number;
   ml: 120 | 250;
-  /** Alternative way to earn this tier: min. pcs of lenjer besar / kapal selam. */
-  altLargePcs?: number;
 };
 
 export const bonusTiers: BonusTier[] = [
-  { minPcs: 10, bottles: 1, ml: 120, altLargePcs: 2 },
+  { minPcs: 10, bottles: 1, ml: 120 },
   { minPcs: 25, bottles: 1, ml: 250 },
   { minPcs: 50, bottles: 2, ml: 250 },
 ];
